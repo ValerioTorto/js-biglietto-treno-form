@@ -18,26 +18,26 @@
 
 <!-- QUI POTETE INIZIARE IL VOSTRO ESERCIZIO! -->
 
-<body class=".bg-warning">
+<body class="bg-warning bg-gradient">
     <div class="container">
 
         <h1 class="text-center mt-5 mb-4"> CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <form id="form_data_input" onsubmit="userHasFinishDataCompletion(event)">
+        <form id="form_data_input" onsubmit="userHasFinishDataCompletion(event)" class="bg-white p-4">
             <div class="row  mb-3">
-                <div class="col-3">
+                <div class="col-lg-4 col-mg-4 col-6">
                 <label for="name" class="form-label">Nome Cognome</label>
                
                     <input type="text" class="form-control" id="name">
                 </div>
             
-            <div class="col-3">
-                <label for="kmdapercorrere" class="col-sm-2 col-form-label">Km da percorrere</label>
+            <div class="col-lg-4 col-mg-4 col-6">
+                <label for="kmdapercorrere" class="form-label">Km da percorrere</label>
                 <div class>
                     <input type="text" class="form-control" id="kmdapercorrere">
                 </div>
             </div>
-            <div class="col-3">
-                <label for="favourite_color" class="col-sm-2 col-form-label">Fascia d'età</label>
+            <div class="col-lg-4 col-mg-4 col-6">
+                <label for="favourite_color" class="form-label">Fascia d'età</label>
                 <div class>
                     <select id="eta" class="form-select" aria-label="Default select example">
                         <option selected="Maggiorenne">Maggiorenne</option>
@@ -46,9 +46,15 @@
                     </select>
                 </div>
             </div>
+            <div class="col-12 col-lg-12 col-md-12 text-center">
             <button type="submit" class="btn btn-primary mt-5">Crea biglietto</button>
+            </div>
         </form>
-
+    </div>
+    <div class="container">
+        <h1 class="text-center mt-3">IL TUO BIGLIETTO</h1>
+        <h2>Dettaglio dei passeggeri</h1>
+        <h2>NOME PASSEGGERO</h1>
     </div>
 
 
