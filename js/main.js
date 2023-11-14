@@ -33,6 +33,6 @@ let prezzofinale = prezzokm.toFixed(2);
 
 //document.getElementById("form_data_input").classList.add("d-none");
 // E faccio comparire la card con la password generata
-document.getElementById("form_data_input").classList.add("d-none");
+//document.getElementById("form_data_input").classList.add("d-none");
 }
 //document.getElementById("prezzofinale").innerHTML = prezzofinale;
