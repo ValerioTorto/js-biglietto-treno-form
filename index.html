@@ -5,7 +5,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calcolo biglietto del treno</title>
+  <title>Biglietto del treno form</title>
 
   <!-- Questo link serve per importare Bootstap (alto non è che un foglio di stile CSS) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -21,7 +21,75 @@
 <body>
 
   <!-- QUI POTETE INIZIARE IL VOSTRO ESERCIZIO! -->
+  <main>
 
+    <div class="container text-center mt-5">
+
+      <form id="form_data_input" data-bitwarden-watching="1" onsubmit="userHasFinishDataCompletion(event)">
+        <div class="row mb-3">
+          <label for="name" class="col-sm-2 col-form-label">Nome Cognome</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="kmdapercorrere" class="col-sm-2 col-form-label">Km da percorrere</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="kmdapercorrere">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="favourite_color" class="col-sm-2 col-form-label">Fascia d'età</label>
+          <div class="col-sm-10">
+            <select id="eta" class="form-select" aria-label="Default select example">
+              <option selected="Maggiorenne">Maggiorenne</option>
+              <option value="Minorenne">Minorenne</option>
+              <option value="65+">65+</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Genera</button>
+      </form>
+
+    </div>
+
+    <form data-bitwarden-watching="1" onsubmit="userHasFinishDataCompletion(event)">
+      <div class="row mb-3">
+        <label for="name" class="col-sm-2 col-form-label">Nome</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="name">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="surname" class="col-sm-2 col-form-label">Cognome</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="surname">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">HO FINITO</button>
+    </form>
+
+  </div>
+
+      <div class="row justify-content-center align-items-center mt-5 p-5 ">
+        <div class="col-4 ">
+          <div id="card_password" class="card shadow p-3 mb-5 bg-body-tertiary rounded border-info d-none">
+            <div class="card-header">
+              <h3> Password Generator </h3>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"> Ecco la tua nuova password </h5>
+              <p> <span id="user_password"></span></p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </main>
   
 
 
